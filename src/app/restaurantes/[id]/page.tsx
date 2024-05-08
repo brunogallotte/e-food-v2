@@ -4,6 +4,8 @@ import Banner from './pageResources/components/Banner'
 import MenuList from './pageResources/components/MenuList'
 import SidebarCart from './pageResources/components/SidebarCart'
 import { Metadata } from 'next'
+import { Suspense } from 'react'
+import MenuListSkeleton from './pageResources/components/MenuListSkeleton'
 
 type TRestaurantePageProps = {
   params: {
@@ -19,7 +21,9 @@ export default function Restaurante({ params }: TRestaurantePageProps) {
       <SidebarCart />
       <Header />
       <Banner id={params.id} />
-      <MenuList id={params.id} />
+      <Suspense fallback={<MenuListSkeleton />}>
+        <MenuList id={params.id} />
+      </Suspense>
     </>
   )
 }
