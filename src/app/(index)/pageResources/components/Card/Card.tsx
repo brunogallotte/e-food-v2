@@ -31,6 +31,7 @@ export default function Card({
         height={217}
         quality={100}
       />
+
       <div className="min-h-[181px] border-b border-l border-r border-efood-red-100 bg-white p-2">
         <header className="flex items-center justify-between">
           <strong className="text-lg font-bold text-efood-red-100">
