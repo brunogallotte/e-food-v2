@@ -55,7 +55,7 @@ export default function FormOrder({ handleOrderStep }: TFormOrderProps) {
         </label>
         <input
           {...register('name')}
-          className="mt-2 h-8 bg-efood-beige-200"
+          className="mt-2 h-8 bg-efood-beige-200 p-2"
           type="text"
         />
         {formState.errors.name?.message && (
@@ -74,7 +74,7 @@ export default function FormOrder({ handleOrderStep }: TFormOrderProps) {
         </label>
         <input
           {...register('address')}
-          className="h-8 bg-efood-beige-200"
+          className="h-8 bg-efood-beige-200 p-2"
           type="text"
         />
         {formState.errors.address?.message && (
@@ -93,7 +93,7 @@ export default function FormOrder({ handleOrderStep }: TFormOrderProps) {
         </label>
         <input
           {...register('city')}
-          className="h-8 bg-efood-beige-200"
+          className="h-8 bg-efood-beige-200 p-2"
           type="text"
         />
         {formState.errors.city?.message && (
@@ -114,7 +114,7 @@ export default function FormOrder({ handleOrderStep }: TFormOrderProps) {
           <InputMask
             {...register('zipCode')}
             mask="99999-999"
-            className="h-8 w-full bg-efood-beige-200"
+            className="h-8 w-full bg-efood-beige-200 p-2"
             type="text"
           />
           {formState.errors.zipCode?.message && (
@@ -133,7 +133,7 @@ export default function FormOrder({ handleOrderStep }: TFormOrderProps) {
           </label>
           <input
             {...register('number')}
-            className="h-8 w-full bg-efood-beige-200"
+            className="h-8 w-full bg-efood-beige-200 p-2"
             type="text"
           />
           {formState.errors.number?.message && (

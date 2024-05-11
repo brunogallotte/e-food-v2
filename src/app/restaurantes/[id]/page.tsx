@@ -5,7 +5,7 @@ import MenuList from './pageResources/components/MenuList'
 import SidebarCart from './pageResources/components/SidebarCart'
 import { Metadata } from 'next'
 import { Suspense } from 'react'
-import MenuListSkeleton from './pageResources/components/MenuListSkeleton'
+import MenuListSkeleton from './pageResources/components/Skeletons/MenuListSkeleton'
 
 type TRestaurantePageProps = {
   params: {

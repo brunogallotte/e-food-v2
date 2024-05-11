@@ -26,6 +26,7 @@ export default function Product({
         className="h-20 w-20 object-cover"
         width={80}
         height={80}
+        quality={70}
         alt=""
       />
       <div className="flex flex-col">

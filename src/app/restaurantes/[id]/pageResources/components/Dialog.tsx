@@ -29,6 +29,7 @@ export default function Dialog(props: TDialogProps) {
             alt=""
             width={280}
             height={280}
+            quality={75}
             className="h-full min-h-[280px] w-full max-w-[280px] object-cover"
           />
           <div className="flex flex-col text-white">

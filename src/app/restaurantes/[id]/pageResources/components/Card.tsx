@@ -10,6 +10,7 @@ export default function Card(props: TDish) {
         src={props.foto}
         width={304}
         height={167}
+        quality={70}
         alt=""
       />
       <b className="mt-2 font-bold text-efood-beige-200">{props.nome}</b>

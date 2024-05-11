@@ -58,7 +58,7 @@ export default function FormCheckout({ handleOrderStep }: TFormCheckoutProps) {
         </label>
         <input
           {...register('nameInCard')}
-          className="mt-2 h-8 bg-efood-beige-200"
+          className="mt-2 h-8 bg-efood-beige-200 p-2"
           type="text"
         />
         {formState.errors.nameInCard?.message && (
@@ -77,7 +77,7 @@ export default function FormCheckout({ handleOrderStep }: TFormCheckoutProps) {
         </label>
         <input
           {...register('numberInCard')}
-          className="mt-2 h-8 bg-efood-beige-200"
+          className="mt-2 h-8 bg-efood-beige-200 p-2"
           type="text"
         />
         {formState.errors.numberInCard?.message && (
@@ -96,7 +96,7 @@ export default function FormCheckout({ handleOrderStep }: TFormCheckoutProps) {
         </label>
         <input
           {...register('codeOfCard')}
-          className="mt-2 h-8 bg-efood-beige-200"
+          className="mt-2 h-8 bg-efood-beige-200 p-2"
           type="text"
         />
         {formState.errors.codeOfCard?.message && (
@@ -116,7 +116,7 @@ export default function FormCheckout({ handleOrderStep }: TFormCheckoutProps) {
           </label>
           <input
             {...register('monthOfExpiration')}
-            className="mt-2 h-8 w-full bg-efood-beige-200"
+            className="mt-2 h-8 w-full bg-efood-beige-200 p-2"
             type="text"
           />
           {formState.errors.monthOfExpiration?.message && (
@@ -135,7 +135,7 @@ export default function FormCheckout({ handleOrderStep }: TFormCheckoutProps) {
           </label>
           <input
             {...register('yearOfExpiration')}
-            className="mt-2 h-8 w-full bg-efood-beige-200"
+            className="mt-2 h-8 w-full bg-efood-beige-200 p-2"
             type="text"
           />
           {formState.errors.yearOfExpiration?.message && (
